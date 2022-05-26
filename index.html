@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="container_description">
+            <div class="content_desc">
+                <h1>Gerador de Senhas</h1>
+                <p>Esse pequeno programa gera senha de determinados tamanhos aleatoriamente, reforçando ainda mais a segurança da senha.</p>
+            </div>
+        </div>
+        <div class="geradorImput">
+            <div class="content_input">
+                <h1>Crie a sua senha</h1>
+                <div class="input">
+                    <p>Tamanho <span id="value"></span> caracteres</p>
+                    <input id="slider" class="slider" value="15" min="5" max="25" type="range">
+                    <button id="buttonGerar">Gerar Senha</button>
+                    <div class="senhaGerada">
+                        <p>Sua senha gerada foi:</p>
+                        <div class="senhap"><p class="senha"></p> </div>
+                        <span id="togle">Clique e copie☝️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
