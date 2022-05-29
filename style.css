@@ -3,20 +3,20 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-color: rgb(251, 250, 255);
-}
+
+
 .conteiner{
     display: flex;
-    margin: 4rem;
+    width: 100vw;
+    height: 100vh;
     border-radius: 20px;
     box-shadow: 1px 1px 19px rgba(0, 0, 0, 0.5);
 }
 
 .container_description{
     width: 40%;
-    height: 80vh;
-    background-image: radial-gradient(circle at 15.86% 15.86%, #3a2c2a 0, #311d1d 25%, #25090b 50%, #1e0000 75%, #160000 100%);
+    height: 100%;
+    background-color: rgb(6, 6, 40);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,21 +24,334 @@ body{
     box-shadow: 3px 5px 19px rgb(0, 0, 0, 0.4);
 }
 .content_desc{
-    margin: 1rem;
-    text-align:center;
-}.content_desc h1{
-    color: #ffffff;
-    text-shadow: 4px 3px 0 #7A7A7A;
-    margin-bottom: 1rem;
-}.content_desc p{
+    margin: 2rem;
+    text-align: center;
+ 
+}
+/* EFECTFONT */
+.hero {
+    font-family: sans-serif;
+    font-size: 2.4rem;
+    line-height: 1;
+    display: inline-block;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 3px;
+  
+    /* Bright things in dark environments usually cast that light, giving off a glow */
+    filter: drop-shadow(0 1px 3px);
+  }
+  
+  .glitch span {
+    animation: paths 5s step-end infinite;
+  }
+  
+  .glitch::before {
+    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+      font 8s step-end infinite, movement 10s step-end infinite;
+  }
+  
+  .glitch::after {
+    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+      font 7s step-end infinite, movement 8s step-end infinite;
+  }
+  
+  .hero-container {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .environment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  @keyframes paths {
+    0% {
+      clip-path: polygon(
+        0% 43%,
+        83% 43%,
+        83% 22%,
+        23% 22%,
+        23% 24%,
+        91% 24%,
+        91% 26%,
+        18% 26%,
+        18% 83%,
+        29% 83%,
+        29% 17%,
+        41% 17%,
+        41% 39%,
+        18% 39%,
+        18% 82%,
+        54% 82%,
+        54% 88%,
+        19% 88%,
+        19% 4%,
+        39% 4%,
+        39% 14%,
+        76% 14%,
+        76% 52%,
+        23% 52%,
+        23% 35%,
+        19% 35%,
+        19% 8%,
+        36% 8%,
+        36% 31%,
+        73% 31%,
+        73% 16%,
+        1% 16%,
+        1% 56%,
+        50% 56%,
+        50% 8%
+      );
+    }
+  
+    5% {
+      clip-path: polygon(
+        0% 29%,
+        44% 29%,
+        44% 83%,
+        94% 83%,
+        94% 56%,
+        11% 56%,
+        11% 64%,
+        94% 64%,
+        94% 70%,
+        88% 70%,
+        88% 32%,
+        18% 32%,
+        18% 96%,
+        10% 96%,
+        10% 62%,
+        9% 62%,
+        9% 84%,
+        68% 84%,
+        68% 50%,
+        52% 50%,
+        52% 55%,
+        35% 55%,
+        35% 87%,
+        25% 87%,
+        25% 39%,
+        15% 39%,
+        15% 88%,
+        52% 88%
+      );
+    }
+  
+    30% {
+      clip-path: polygon(
+        0% 53%,
+        93% 53%,
+        93% 62%,
+        68% 62%,
+        68% 37%,
+        97% 37%,
+        97% 89%,
+        13% 89%,
+        13% 45%,
+        51% 45%,
+        51% 88%,
+        17% 88%,
+        17% 54%,
+        81% 54%,
+        81% 75%,
+        79% 75%,
+        79% 76%,
+        38% 76%,
+        38% 28%,
+        61% 28%,
+        61% 12%,
+        55% 12%,
+        55% 62%,
+        68% 62%,
+        68% 51%,
+        0% 51%,
+        0% 92%,
+        63% 92%,
+        63% 4%,
+        65% 4%
+      );
+    }
+  
+    45% {
+      clip-path: polygon(
+        0% 33%,
+        2% 33%,
+        2% 69%,
+        58% 69%,
+        58% 94%,
+        55% 94%,
+        55% 25%,
+        33% 25%,
+        33% 85%,
+        16% 85%,
+        16% 19%,
+        5% 19%,
+        5% 20%,
+        79% 20%,
+        79% 96%,
+        93% 96%,
+        93% 50%,
+        5% 50%,
+        5% 74%,
+        55% 74%,
+        55% 57%,
+        96% 57%,
+        96% 59%,
+        87% 59%,
+        87% 65%,
+        82% 65%,
+        82% 39%,
+        63% 39%,
+        63% 92%,
+        4% 92%,
+        4% 36%,
+        24% 36%,
+        24% 70%,
+        1% 70%,
+        1% 43%,
+        15% 43%,
+        15% 28%,
+        23% 28%,
+        23% 71%,
+        90% 71%,
+        90% 86%,
+        97% 86%,
+        97% 1%,
+        60% 1%,
+        60% 67%,
+        71% 67%,
+        71% 91%,
+        17% 91%,
+        17% 14%,
+        39% 14%,
+        39% 30%,
+        58% 30%,
+        58% 11%,
+        52% 11%,
+        52% 83%,
+        68% 83%
+      );
+    }
+  
+    76% {
+      clip-path: polygon(
+        0% 26%,
+        15% 26%,
+        15% 73%,
+        72% 73%,
+        72% 70%,
+        77% 70%,
+        77% 75%,
+        8% 75%,
+        8% 42%,
+        4% 42%,
+        4% 61%,
+        17% 61%,
+        17% 12%,
+        26% 12%,
+        26% 63%,
+        73% 63%,
+        73% 43%,
+        90% 43%,
+        90% 67%,
+        50% 67%,
+        50% 41%,
+        42% 41%,
+        42% 46%,
+        50% 46%,
+        50% 84%,
+        96% 84%,
+        96% 78%,
+        49% 78%,
+        49% 25%,
+        63% 25%,
+        63% 14%
+      );
+    }
+  
+    90% {
+      clip-path: polygon(
+        0% 41%,
+        13% 41%,
+        13% 6%,
+        87% 6%,
+        87% 93%,
+        10% 93%,
+        10% 13%,
+        89% 13%,
+        89% 6%,
+        3% 6%,
+        3% 8%,
+        16% 8%,
+        16% 79%,
+        0% 79%,
+        0% 99%,
+        92% 99%,
+        92% 90%,
+        5% 90%,
+        5% 60%,
+        0% 60%,
+        0% 48%,
+        89% 48%,
+        89% 13%,
+        80% 13%,
+        80% 43%,
+        95% 43%,
+        95% 19%,
+        80% 19%,
+        80% 85%,
+        38% 85%,
+        38% 62%
+      );
+    }
+  
+    1%,
+    7%,
+    33%,
+    47%,
+    78%,
+    93% {
+      clip-path: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+.content_desc p{
+    margin-top: 20px;
     font-weight: 600;
-    color: #FFFFFF;
-    text-shadow: #FFF 0px 0px 5px;
+    color: white;
+    color: yellow;
+    
+}.content_desc p:after{
+    content: "}";
+    margin-left: 5px;
+    font-size: 1.3rem;
+    color: rgb(43, 0, 255);
+}.content_desc p:before{
+    content: "{";
+    margin-right: 5px;
+    font-size: 1.3rem;
+    color: rgb(43, 0, 255);
 }
 .geradorImput{
-    background-image: radial-gradient(circle at -1.52% 63.8%, #ef9200 0, #f48600 12.5%, #f97800 25%, #fc6900 37.5%, #ff5700 50%, #ff4212 62.5%, #ff241f 75%, #ff002a 87.5%, #ff0035 100%);
+    background-color: rgb(134, 149, 233);
     width: 60%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,21 +362,19 @@ input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
     height: 10px;
-    background: rgba(255, 255, 255, 0.679);
+    background: white;
     border-radius: 5px;
-    background-image: #ff4500;
     background-size: 70% 100%;
     background-repeat: no-repeat;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.259);
+    transition: all 0.3s;
 }
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #9c7aef;
     cursor: pointer;
-    box-shadow: 0 0 2px 0 #555;
     transition: all 0.4s ease-in-out;
 }
 input[type=range]::-webkit-slider-runnable-track  {
@@ -71,6 +382,7 @@ input[type=range]::-webkit-slider-runnable-track  {
     box-shadow: none;
     border: none;
     background: transparent;
+    transition: all 0.3s;
 }
 .content_input h1{
     color: white;
@@ -95,12 +407,19 @@ input[type=range]::-webkit-slider-runnable-track  {
     align-items: center;
     width: 60%;
 }
+.input p:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+}.tamanho:nth-child(1)::before, .tamanho:nth-child(1)::after{
+    content: "/*";
+    color: green
+}
 button{
     margin-top: 1.4rem;
     width: 100%;
     padding: 10px;
     font-size: 1.1rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(9, 3, 42);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.389);
     border: none;
     border-radius: 5px;
@@ -125,9 +444,9 @@ button{
     margin-top: 10px;
     background-color: black;
     color: white;
-    width: 100%;
+    max-width: 3000px;
     height: 50px;
-    padding: 8px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,17 +467,17 @@ button{
 .senha:active{
     background-color: blue;
 }
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .conteiner{
         flex-flow: column;
-        margin: 2rem;
+        
     }.container_description{
         width: 100%;
-        height: 40vh;
+        max-height: 6000px;
         
     }.geradorImput{
         width: 100%;
-        max-height: 60vh;
+        max-height: 6000px;
     }.content_desc{
         margin: 3rem;
     }
